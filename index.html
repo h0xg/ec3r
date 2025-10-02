@@ -56,19 +56,19 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Lingxiang Hu</a><sup>1</sup>,</span>
+                Lingxiang Hu</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank"> Naima Ait Oufroukh</a><sup>1</sup>,</span>
+                   Naima Ait Oufroukh</a><sup>1</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Fabien Bonardi</a><sup>1</sup>,</span>
+                   Fabien Bonardi</a><sup>1</sup>,</span>
                     <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Raymond Ghandour<sup>2</sup></a>
+                    Raymond Ghandour<sup>2</sup></a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>IBISC Lab, Université Paris-Saclay </span>&nbsp;&nbsp;
-                    <span class="author-block"><sup>2</sup>American University of the Middle East</span>&nbsp;&nbsp;
+                    <span class="author-block"><sup>1</sup>IBISC Lab, Université Paris-Saclay, France </span>&nbsp;&nbsp;
+                    <span class="author-block"><sup>2</sup>American University of the Middle East, Kuwait</span>&nbsp;&nbsp;
                   </div>
 
                   <div class="column has-text-centered">
@@ -113,37 +113,51 @@
   </div>
 </section>
 
+<!-- Teaser / Method Explainer -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">Overview Video</h2>
 
-        <!-- Wrapper to position overlay caption -->
-        <div style="position:relative; width:100%; max-width:860px; margin:.5rem auto 1rem;">
+        <!-- Video block: centered, same visual style as your image -->
+        <figure class="image" style="max-width: 860px; margin: .5rem auto 1rem;">
+          <figcaption class="has-text-centered" style="
+              margin: 0 0 .75rem 0;
+              display: inline-block;
+              padding: .5rem .9rem;
+              background: #f5f5f5;
+              border-radius: 10px;
+              font-weight: 600;">
+            Detailed method explanation and reconstruction results — audio recommended
+          </figcaption>
 
-          <!-- OVERLAY CAPTION (always visible) -->
-          <div style="
-            position:absolute; top:8px; left:50%; transform:translateX(-50%);
-            z-index:3; padding:8px 14px; border-radius:10px;
-            background:rgba(255,255,255,.9); font-weight:700; font-size:16px;
-            box-shadow:0 2px 6px rgba(0,0,0,.2); text-align:center; white-space:nowrap;">
-            Explainer video — audio on recommended
-          </div>
+          <!-- Responsive video -->
+          <video
+            id="explainer"
+            autoplay
+            controls
+            muted
+            loop
+            playsinline
+            style="width:100%; height:auto; display:block; border-radius:10px;">
+            <source src="static/videos/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </figure>
 
-          <!-- 16:9 responsive video frame -->
-          <div style="position:relative; width:100%; padding-top:56.25%; border-radius:10px; overflow:hidden;">
-            <video id="explainer" autoplay controls muted loop playsinline
-                   style="position:absolute; inset:0; width:100%; height:100%; display:block;">
-              <source src="static/videos/video.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
+        <!-- Optional description under the video (kept consistent with Abstract text) -->
+        <div class="content has-text-justified">
+          <p>
+
+          </p>
         </div>
 
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -235,13 +249,6 @@
 
 
 
-<div class="publication-video video is-16by9">
-  <iframe
-    src="https://www.youtube-nocookie.com/embed/fYgoIsLe8Iw?rel=0&modestbranding=1"
-    title="EC3R-SLAM video"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-</div>
 
 
 <section class="section">
@@ -335,6 +342,13 @@
 </section>
 
 
+<div class="publication-video video is-16by9">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/fYgoIsLe8Iw?rel=0&modestbranding=1"
+    title="EC3R-SLAM video"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</div>
 
 
 
